@@ -1,0 +1,12 @@
+@font-face {
+    font-family: 'BrengkelRegular';
+    src: url('../assets/fonts/BrengkelRegularRegular.eot');
+    src: url('../assets/fonts/BrengkelRegularRegular.eot?#iefix') format('embedded-opentype'),
+        url('../assets/fonts/BrengkelRegularRegular.woff2') format('woff2'),
+        url('../assets/fonts/BrengkelRegularRegular.woff') format('woff'),
+        url('../assets/fonts/BrengkelRegularRegular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
