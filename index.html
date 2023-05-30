@@ -8,6 +8,8 @@
     <title>Space Xl - удобные кресла!</title>
     <link rel="stylesheet" href="./css/main.css">
     <link rel="stylesheet" href="./css/stylesheet.css">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick-theme.css">
+    <link rel="stylesheet" href="./assets/plugins/slick/slick.css">
     <style>
         .luxury {
             background-image: url("./assets/img/bg/luxury.png");
@@ -117,9 +119,111 @@
             background-color: #cf2341;
             padding: 100px 0;
         }
+
         .footer {
             background-color: #262626;
             padding: 100px 0;
+        }
+
+        @media screen and (max-width: 500px) {
+            .luxury {
+                background-image: url("./assets/img/bg/luxury.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .dual__core {
+                background-image: url("./assets/img/bg/dual-core.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .spline {
+                background-image: url("./assets/img/bg/spline.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .space {
+                background-image: url("./assets/img/bg/space.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .leps {
+                background-image: url("./assets/img/bg/leps.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .japan {
+                background-image: url("./assets/img/bg/japan.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .plantar {
+                background-image: url("./assets/img/bg/plantar.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .air {
+                background-image: url("./assets/img/bg/air.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 40px 0;
+            }
+
+            .air__intro {
+                background-image: url("./assets/img/elements/72.png");
+                background-repeat: no-repeat;
+                background-size: 160px;
+                padding: 50px 0;
+                background-position: center;
+            }
+
+            .controller {
+                background-image: url("./assets/img/bg/air.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 40px 0;
+            }
+
+            .sleep {
+                background-image: url("./assets/img/bg/sleep.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .voice {
+                background-image: url("./assets/img/bg/voice.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .technology {
+                background-image: url("./assets/img/bg/technology.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0;
+            }
+
+            .audio {
+                background-image: url("./assets/img/bg/audio.png");
+                background-repeat: no-repeat;
+                background-size: cover;
+                padding: 100px 0 480px 0;
+            }
         }
     </style>
 </head>
@@ -174,16 +278,56 @@
                     </div>
                     <div class="info__product-slider">
                         <div class="info__product-slide">
-                            <img src="./assets/img/elements/slider/armchair.png" alt="armchair">
-                        </div>
-                        <div class="info__product-slide-intro">
-                            <div class="info__product-stock">
-                                <img src="./assets/img/ico/check.png" alt="check">
-                                <h3>В Наличии</h3>
+                            <div class="slider-for">
+                                <div class="slider-for-item">
+                                    <img src="./assets/img/elements/slider/armchair.png" alt="armchair">
+                                </div>
+                                <div class="slider-for-item">
+                                    <img src="./assets/img/elements/slider/armchair-2.png" alt="armchair">
+                                </div>
+                                <div class="slider-for-item">
+                                    <img src="./assets/img/elements/slider/armchair-3.png" alt="armchair">
+                                </div>
                             </div>
-                            <div class="info__product-price">
-                                <h3>1 600 000</h3>
-                                <h4>₽</h4>
+                            <div class="slider-nav">
+                                <div class="slider-nav-item">
+                                    <img src="./assets/img/elements/slider/armchair-body-1.png" alt="armchair">
+                                </div>
+                                <div class="slider-nav-item">
+                                    <img src="./assets/img/elements/slider/armchair-body-2.png" alt="armchair">
+                                </div>
+                                <div class="slider-nav-item">
+                                    <img src="./assets/img/elements/slider/armchair-body-3.png" alt="armchair">
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info__product-slide-basket-content">
+                            <div class="info__product-slide-intro">
+                                <div class="info__product-stock">
+                                    <img src="./assets/img/ico/check.png" alt="check">
+                                    <h3>Есть в наличии</h3>
+                                </div>
+                                <div class="info__product-price">
+                                    <h3>1 600 000</h3>
+                                    <h4>₽</h4>
+                                </div>
+                                <div class="info__product-cashback">
+                                    <img src="./assets/img/ico/dollar.png" alt="cashback">
+                                    <p>Кэшбек: 48 000 баллов</p>
+                                </div>
+                            </div>
+                            <div class="info__product-slide-basket">
+                                <button class="basket__btn red__btn">
+                                    <img src="./assets/img/ico/basket-dark.png" alt="в корзину">
+                                    в корзину
+                                </button>
+                                <button class="basket__btn outline__btn">
+                                    <img src="./assets/img/ico/basket-outline.png" alt="купить в один клик">
+                                    купить в один клик
+                                </button>
+                                <p>
+                                    В рассрочку всего за 100 000 р/ месяц
+                                </p>
                             </div>
                         </div>
                     </div>
@@ -531,17 +675,17 @@
                         </nav>
                     </div>
                     <div class="footer__info">
-                        <p>
+                        <p class="footer__info-p-first">
                             Массажное кресло нового поколения
                         </p>
-                        <h1>
+                        <h1 class="footer__info-brand-text">
                             Space XI
                         </h1>
-                        <h2>
+                        <h2 class="footer__info-third-text">
                             Где фантазии становятся
                         </h2>
-                        <p>
-                            Space XI  — это роскошь в каждой<br>
+                        <p class="footer__info-four-text">
+                            Space XI — это роскошь в каждой<br>
                             детали, комфорт премиального уровня<br>
                             и беспрецедентная<br>
                             многофункциональ­ность
@@ -551,6 +695,9 @@
             </div>
         </section>
     </footer>
+    <script src="https://code.jquery.com/jquery-3.7.0.min.js"></script>
+    <script src="./assets/plugins/slick/slick.min.js"></script>
+    <script src="./assets/js/script.js"></script>
 </body>
 
 </html>

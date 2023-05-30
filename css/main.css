@@ -140,6 +140,101 @@ body {
   margin-bottom: 0;
   margin-top: 120px;
 }
+.info__product-slider {
+  display: flex;
+  justify-content: space-evenly;
+  margin: 30px auto;
+}
+.info__product-stock {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+}
+.info__product-stock h3 {
+  margin-left: 5px;
+}
+.info__product-price {
+  display: flex;
+  align-items: center;
+  text-transform: uppercase;
+  margin-top: 25px;
+}
+.info__product-price h3 {
+  font-size: 30px;
+  font-weight: 300;
+}
+.info__product-price h4 {
+  font-size: 20px;
+  font-weight: 300;
+  margin-left: 5px;
+  margin-top: 5px;
+}
+.info__product-cashback {
+  display: flex;
+  align-items: center;
+  margin-top: 10px;
+}
+.info__product-cashback p {
+  font-size: 14px;
+  color: #7d7d7d;
+  text-transform: uppercase;
+  margin-left: 5px;
+}
+.info__product-slide {
+  max-width: 50%;
+}
+.info__product-slide-basket-content {
+  margin-top: 102px;
+}
+.info__product-slide-basket {
+  margin-top: 12px;
+  display: flex;
+  flex-direction: column;
+}
+.info__product-slide-basket button {
+  margin: 12px 0;
+}
+.info__product-slide-basket .red__btn {
+  background-color: #cf2341;
+  padding: 10px 65px;
+  border-radius: 100px;
+  outline: 0 none;
+  border: 0 none;
+  color: #fff;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.info__product-slide-basket .red__btn img {
+  margin-right: 10px;
+}
+.info__product-slide-basket .outline__btn {
+  background: transparent;
+  padding: 10px 25px;
+  border-radius: 100px;
+  outline: 0 none;
+  border: 1px solid #000;
+  color: #000;
+  font-size: 14px;
+  text-transform: uppercase;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  cursor: pointer;
+}
+.info__product-slide-basket .outline__btn img {
+  margin-right: 10px;
+}
+.info__product-slide-basket p {
+  font-size: 14px;
+  color: #7d7d7d;
+  text-transform: uppercase;
+}
 
 .luxury {
   color: #fff;
@@ -259,7 +354,7 @@ body {
 }
 
 .leps__intro {
-  padding-bottom: 450px;
+  padding-bottom: 459px;
 }
 .leps__intro h1 {
   color: #fff;
@@ -286,7 +381,7 @@ body {
 }
 
 .japan__content {
-  padding-bottom: 450px;
+  padding-bottom: 583px;
 }
 .japan__content h1,
 .japan__content h2 {
@@ -412,7 +507,7 @@ body {
 }
 
 .audio {
-  padding-bottom: 480px;
+  padding-bottom: 474px;
 }
 .audio__intro h2 {
   margin: 30px 0;
@@ -422,6 +517,7 @@ body {
   margin: 30px auto;
   display: flex;
   justify-content: center;
+  max-width: 100%;
 }
 
 .contact__intro h1 {
@@ -476,15 +572,27 @@ body {
 .footer__content {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+}
+.footer__brand img {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin: 0 auto;
 }
 .footer__contact-order img {
   margin: 0 auto;
 }
-.footer__contact-order p,
 .footer__contact-order a {
   color: #dac3a3;
   font-size: 15px;
   text-align: center;
+}
+.footer__contact-order p {
+  color: #dac3a3;
+  font-size: 18px;
+  text-align: center;
+  margin: 10px auto;
 }
 .footer__links nav ul {
   display: flex;
@@ -507,4 +615,190 @@ body {
   text-align: right;
   text-transform: uppercase;
   font-weight: 400;
+}
+.footer__info-p-first {
+  font-size: 8px;
+}
+.footer__info-brand-text {
+  font-size: 22px;
+}
+.footer__info-third-text {
+  font-size: 11px;
+}
+.footer__info-four-text {
+  font-size: 8px;
+}
+
+@media screen and (max-width: 1152px) {
+  .container {
+    max-width: 100%;
+    width: 100%;
+    padding: 0 30px;
+    margin: 0 auto;
+  }
+}
+@media screen and (max-width: 1004px) {
+  .info__product-slide {
+    max-width: 58%;
+  }
+  .info__product-content-intro {
+    align-items: center;
+  }
+  .info__product-content h2 {
+    font-family: "BrengkelRegular";
+    font-size: 81px;
+    text-align: center;
+    color: #dac3a3;
+    letter-spacing: 26px;
+    margin-left: 125px;
+    margin-top: 20px;
+  }
+}
+@media screen and (max-width: 888px) {
+  .nav__content {
+    flex-direction: column;
+  }
+  .info__product-slider {
+    flex-direction: column;
+  }
+  .info__product-slide {
+    max-width: 100%;
+  }
+  .nav__links {
+    margin: 30px auto;
+  }
+  .nav__contacts {
+    margin: 30px auto;
+  }
+  .air__img img {
+    max-width: 100%;
+  }
+  .spline__info-content {
+    padding-bottom: 0;
+  }
+  .space__content {
+    padding-bottom: 296px;
+  }
+  .leps__intro {
+    padding-bottom: 128px;
+  }
+  .japan__content {
+    padding-bottom: 248px;
+  }
+  .plantar__info p {
+    max-width: 100%;
+  }
+  .plantar__content {
+    padding-bottom: 0;
+  }
+  .plantar {
+    padding: 70px 0;
+  }
+  .technology__left p {
+    max-width: 100%;
+  }
+  .technology__info {
+    padding-bottom: 107px;
+  }
+  .audio {
+    padding-bottom: 0;
+  }
+  .intro__title {
+    font-size: 28px;
+  }
+  .intro__subtitle {
+    font-size: 24px;
+  }
+  .intro__info-subtitle {
+    font-size: 16px;
+  }
+  .contact__form form input {
+    max-width: 100%;
+  }
+  .contact__form form button {
+    max-width: 100%;
+  }
+}
+@media screen and (max-width: 548px) {
+  .footer__content {
+    flex-direction: column;
+  }
+  .footer__info {
+    text-align: center;
+  }
+  .footer__links {
+    margin: 30px auto;
+  }
+  .nav__links ul {
+    flex-direction: column;
+  }
+  .nav__links ul li {
+    margin: 10px auto;
+  }
+  .slider-for-item img {
+    max-width: 100%;
+  }
+  .info__product-content-intro {
+    flex-direction: column;
+  }
+  .info__product-content h2 {
+    margin-left: 0;
+    margin-top: 20px;
+  }
+  .info__product-content-intro p {
+    margin-top: 20px;
+  }
+  .luxury__armchair-setting {
+    flex-direction: column;
+  }
+  .luxury__armchair-info {
+    margin-top: 0;
+  }
+  .dual__core-info-block {
+    flex-direction: column;
+  }
+  .dual__core-xline {
+    margin-top: 40px;
+  }
+  .spline__info-content {
+    flex-direction: column;
+  }
+  .spline {
+    background-size: cover;
+  }
+  .spline__info-item {
+    margin: 30px auto;
+  }
+  .space__content {
+    padding-bottom: 0;
+  }
+  .leps {
+    background-size: cover;
+  }
+  .japan {
+    background-size: cover;
+  }
+  .plantar {
+    background-size: cover;
+  }
+  .voice__intro {
+    padding-bottom: 100px;
+  }
+  .sleep__intro {
+    padding-bottom: 0;
+  }
+  .technology {
+    background-size: cover;
+  }
+  .technology__info {
+    flex-direction: column-reverse;
+  }
+  .audio {
+    background-size: cover;
+  }
+}
+@media screen and (max-width: 500px) {
+  .slider-nav-item {
+    margin: 0 20px;
+  }
 }
